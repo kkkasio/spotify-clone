@@ -19,12 +19,27 @@ export const Nav = styled.ul`
   list-style: none;
   margin-top: 25px;
 
+  div {
+    margin-bottom: 15px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    svg:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
   &:first-child {
     margin: 0;
   }
 
   li {
+    display: flex;
+    align-items: center;
+
     a {
+      display: flex;
       color: inherit;
       text-decoration: none;
       font-size: 13px;
@@ -33,6 +48,10 @@ export const Nav = styled.ul`
 
       &:hover {
         color: #fff;
+      }
+
+      svg {
+        margin-right: 13px;
       }
     }
 
